@@ -1,2 +1,2 @@
 # CodeWars
-CodeWar problems and solutions
+CodeWar problems and solutions for various languages
