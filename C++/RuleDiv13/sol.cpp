@@ -11,6 +11,9 @@ public:
 		ans = thirt(1234567);
 	}
 	long long ans;
+	void parserFunc(vector<int>& vinp, int n){
+
+	}
 
 public:
     static long long thirt(long long n);
@@ -29,12 +32,17 @@ long long Thirteen::thirt(long long n)
 		vint.push_back(parser[i] - coversionFactor);
 	}
 
-	long long tmp = 0; 
+	long long tmp; 
 	do{
 		// need to loop until get a repeated value
+		stat = tmp;
+		// cout << vint.size() << " " << parser.size() << " " << modulo.size() << endl;
+		for(int i=0; i < vint.size(); i++){
+			tmp += vint[i] * modulo[ i % modulo.size()];
 
+		}
 
-	}while(stat != tmp )
+	}while(stat != tmp );
 
 	return stat;
 }
